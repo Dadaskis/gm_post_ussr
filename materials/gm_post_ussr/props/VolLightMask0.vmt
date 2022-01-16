@@ -1,0 +1,27 @@
+
+            "unlittwotexture"
+            {
+                "%keywords" "gm_post_ussr_props"
+                "$model" "1"
+        
+            "$nocull" 1 
+            "$additive" 1
+            "$translucent" 1
+            "$no_fullbright" 1
+            "$baseTexture" "gm_post_ussr/props/VolLightMask0_VOLMASK"
+            "Proxies"
+            {
+
+                "TextureScroll"
+                {
+                    "texturescrollvar" "$texture2transform"
+                    "texturescrollrate" 0.02
+                    "texturescrollangle" -135
+                }   
+
+            }
+         
+            "$texture2" "gm_post_ussr/props/VolLightMask0_VOLDUST"
+        
+        }
+    

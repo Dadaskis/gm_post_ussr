@@ -1,0 +1,22 @@
+
+            "VertexLitGeneric"
+            {
+                "%keywords" "gm_post_ussr_props"
+                "$model" "1"
+        
+            "$basetexture" "gm_post_ussr/props/LeafPine0_DA"
+            "$alphatest" "1"
+        
+
+
+"$treesway" "1"
+"$treeswayradius" "60"
+"$treeswayheight" "60"
+"$treeswayspeed" "0.6"
+"$treeswayscrumblespeed" "1.2"
+"$treeswayscrumblestrength" "1.2"
+"$treeswaystrength" "3.0"
+"$treeswayscrumblefrequency" "1.0"
+"$treeswayfalloffexp" "0.01"
+        }
+    

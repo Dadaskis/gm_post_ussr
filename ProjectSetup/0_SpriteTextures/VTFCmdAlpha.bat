@@ -1,0 +1,1 @@
+"G:\Other Stuff\Archive\MapTextures\apps\VTFCmd\VTFCmd.exe" -file %1 -output %2 -format "DXT3" -flag "CLAMPS" -flag "CLAMPT"

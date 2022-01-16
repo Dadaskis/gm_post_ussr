@@ -1,0 +1,12 @@
+
+            "LightmappedGeneric"
+            {
+                "%keywords" "gm_post_ussr"
+        
+            "$basetexture" "gm_post_ussr/map/EmissionWhite_D"
+        
+            "$selfillum" "1"
+            "$selfillummask" "gm_post_ussr/map/EmissionWhite_E"
+        
+        }
+    

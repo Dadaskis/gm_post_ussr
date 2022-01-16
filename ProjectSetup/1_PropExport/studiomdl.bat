@@ -1,0 +1,1 @@
+"G:/Other Stuff/Games/SteamLibrary/steamapps/common/GarrysMod/bin/studiomdl" -game "G:/Other Stuff/Games/SteamLibrary/steamapps/common/GarrysMod/garrysmod" -nop4 %1

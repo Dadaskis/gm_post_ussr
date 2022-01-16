@@ -1,0 +1,18 @@
+
+            "VertexLitGeneric"
+            {
+                "%keywords" "gm_post_ussr_props"
+                "$model" "1"
+        
+            "$basetexture" "gm_post_ussr/props/Puddle0_DAT"
+            "$translucent" "1"
+        
+            "$bumpmap" "gm_post_ussr/props/Puddle0_N"
+        
+
+
+
+"$envmap" "env_cubemap"
+"$envmaptint" "{200 200 200}"
+        }
+    

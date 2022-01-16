@@ -1,0 +1,13 @@
+
+            "VertexLitGeneric"
+            {
+                "%keywords" "gm_post_ussr_props"
+                "$model" "1"
+        
+            "$basetexture" "gm_post_ussr/props/EmissionWhite_D"
+        
+            "$selfillum" "1"
+            "$selfillummask" "gm_post_ussr/props/EmissionWhite_E"
+        
+        }
+    

@@ -1,0 +1,10 @@
+
+        "UnlitGeneric" {
+            "$nofog" "1"
+            "$ignorez" "1"
+    
+            "$basetexture" "skybox/gm_post_ussr_lf_d"
+            "$hdrbasetexture" "skybox/gm_post_ussr_lf_d"
+        
+        }
+    

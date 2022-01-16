@@ -1,0 +1,14 @@
+
+            "LightmappedGeneric"
+            {
+                "%keywords" "gm_post_ussr"
+        
+            "$basetexture" "gm_post_ussr/map/DevGridReflective_D"
+        
+            "$bumpmap" "gm_post_ussr/map/DevGridReflective_N"
+        
+            "$envmap" "env_cubemap"
+            "$normalmapalphaenvmapmask" "1"
+        
+        }
+    

@@ -1,0 +1,1 @@
+"G:\Other Stuff\Archive\MapTextures\apps\VTFCmd\VTFCmd.exe" -flag "CLAMPS" -flag "CLAMPT" -flag "ANISOTROPIC" -flag "NOLOD" -flag "NOMIP" -file %1 -output %2
