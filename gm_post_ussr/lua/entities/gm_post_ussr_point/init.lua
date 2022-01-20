@@ -13,5 +13,10 @@ function ENT:KeyValue(key, value)
 
     if keyCheck("targetname") then
         self.PointName = value
-    end    
+    end
+
+    if keyCheck("parentname") then
+        self.ParentName = value
+        self:SetParent(GPU.GetNamedEnts(self.ParentName)[1])
+    end
 end

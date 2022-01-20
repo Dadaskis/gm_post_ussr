@@ -40,13 +40,49 @@ outsideCall("Minen", function(ent)
     end
 end)
 
+local elevatorMode = false
 insideCall("KillButton", function(ent) 
     if ent:IsPlayer() then
-        local explode = ents.Create("env_explosion") 
-        explode:SetPos(ent:GetPos())
-        explode:Spawn()
-        explode:SetKeyValue("iMagnitude", "1000")
-        explode:Fire("Explode", 0, 0)
+        --local explode = ents.Create("env_explosion") 
+        --explode:SetPos(ent:GetPos())
+        --explode:Spawn()
+        --explode:SetKeyValue("iMagnitude", "1000")
+        --explode:Fire("Explode", 0, 0)
+        if not GPU.IsDelayOver("BrushTestMove") then
+            return
+        end
+        local ply = ent
+        local ent = GPU.GetNamedEnts("BrushTest")[1]
+        if IsValid(ent) then
+            --ent:SetPos(ent:GetPos() + Vector(0, 0, 5))
+            --[[local origin_pos = ent:GetPos()
+            local dest_pos = ent:GetPos() + Vector(0, 0, 60)
+            local progress = 0.0
+            local speed = 0.4
+            timer.Create("gm_post_ussr.BrushMove", 0.001, 0, function() 
+                if IsValid(ent) then 
+                    ent:SetPos(LerpVector(progress, origin_pos, dest_pos))
+                    progress = progress + (speed * FrameTime())
+                    if ent:GetPos():Distance(dest_pos) < 1 then
+                        timer.Remove("gm_post_ussr.BrushMove")
+                    end
+                else
+                    timer.Remove("gm_post_ussr.BrushMove")
+                end
+            end)]]
+            --ent:Fire("Toggle")
+            ent:Fire("SetSpeed", "16")
+            if not elevatorMode then
+                ent:Fire("StartForward")
+                elevatorMode = not elevatorMode
+                ply:ChatPrint("Front")
+            else
+                ent:Fire("StartBackward")
+                elevatorMode = not elevatorMode
+                ply:ChatPrint("Back")
+            end
+        end
+        GPU.SetDelay("BrushTestMove", 0.5)
     end
 end)
 

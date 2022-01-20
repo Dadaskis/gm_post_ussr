@@ -8,9 +8,9 @@ function ENT:Initialize()
     self:SetMoveType(MOVETYPE_NONE)
     self:SetSolidFlags(1)
 
-    --self:PhysicsInit(SOLID_VPHYSICS)
-    --self:SetMoveType(MOVETYPE_VPHYSICS)
-    --self:SetSolid(SOLID_VPHYSICS)
+    if self.ParentName then
+        self:SetParent(GPU.GetNamedEnts(self.ParentName)[1])
+    end
 end
 
 function ENT:OnTakeDamage(dmg)

@@ -11,6 +11,7 @@ function ENT:Initialize()
     ent.BoxMax = maxs
     ent.BoxMin = mins
     ent.TriggerName = self.TriggerName
+    ent.ParentName = self.ParentName
     ent:Spawn()
 end
 
@@ -25,4 +26,8 @@ function ENT:KeyValue(key, value)
     if keyCheck("targetname") then
         self.TriggerName = value
     end    
+
+    if keyCheck("parentname") then
+        self.ParentName = value
+    end
 end

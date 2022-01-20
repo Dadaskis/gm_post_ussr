@@ -29,7 +29,12 @@ function ENT:KeyValue(key, value)
 
     if keyCheck("targetname") then
         self.TriggerName = value
-    end    
+    end
+
+    if keyCheck("parentname") then
+        self.ParentName = value
+        self:SetParent(GPU.GetNamedEnts(self.ParentName)[1])
+    end
 end
 
 --function ENT:Use(ply) 

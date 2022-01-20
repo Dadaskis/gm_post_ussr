@@ -1,13 +1,13 @@
 @include "base.fgd"
 
-@SolidClass base(Targetname) = gm_post_ussr_trigger :
+@SolidClass base(Targetname, Parentname) = gm_post_ussr_trigger :
     "gm_post_ussr trigger which triggers Lua code on entity touch." []
 
-@SolidClass base(Targetname) = gm_post_ussr_use_trigger :
+@SolidClass base(Targetname, Parentname) = gm_post_ussr_use_trigger :
     "gm_post_ussr trigger which triggers Lua code on player use." []
 
-@SolidClass base(Targetname) = gm_post_ussr_damage_trigger :
+@SolidClass base(Targetname, Parentname) = gm_post_ussr_damage_trigger :
     "gm_post_ussr trigger which triggers Lua code on damage." []
 
-@PointClass base(Targetname) iconsprite("gm_post_ussr/sprite/PointEntity.vmt") = gm_post_ussr_point :
+@PointClass base(Targetname, Parentname) iconsprite("gm_post_ussr/sprite/PointEntity.vmt") = gm_post_ussr_point :
     "gm_post_ussr entity which represents position." []
