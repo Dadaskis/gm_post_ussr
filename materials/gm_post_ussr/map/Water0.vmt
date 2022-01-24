@@ -1,73 +1,73 @@
 
-            "Water"
-            {
-                "%keywords" "gm_post_ussr"
-        
-            "$basetexture" "gm_post_ussr/map/Water0_D"
-        
-            "Water_DX81"
-            {
-                "$refractamount" ".25"
-            }
+"Water"
+{
+    "%keywords" "gm_post_ussr"
 
-            "%tooltexture" "gm_post_ussr/map/Water0_D"
+    "$basetexture" "gm_post_ussr/map/Water0_D"
 
-            "$refracttexture" "_rt_WaterRefraction"
-            "$refractamount" "0.02"
-            "$refracttint" "[.75 .75 .75]"
+    "Water_DX81"
+    {
+        "$refractamount" ".25"
+    }
 
-            "$forceexpensive" 1
+    "%tooltexture" "gm_post_ussr/map/Water0_D"
 
-            //"$reflectentities" 1
+    "$refracttexture" "_rt_WaterRefraction"
+    "$refractamount" "0.02"
+    //"$refracttint" "[.75 .75 .75]"
 
-            "$envmap" "env_cubemap"
-            "$reflecttexture" "_rt_WaterReflection"
-            "$reflectamount" "0.05"
-            "$reflecttint" "{120 120 120}"
-            //"$envmaptint" "{20 20 20}"
+    "$forceexpensive" 1
 
-            "$scale" "[1 1]"
+    //"$reflectentities" 1
 
-            "$bumpmap" "gm_post_ussr/map/Water0_D"
-            "$normalmap" "gm_post_ussr/map/Water0_D"
+    "$envmap" "env_cubemap"
+    "$reflecttexture" "_rt_WaterReflection"
+    "$reflectamount" "0.05"
+    "$reflecttint" "{200 200 200}"
+    //"$envmaptint" "{20 20 20}"
 
-            "%compilewater" 1
+    "$scale" "[1 1]"
 
-            "$surfaceprop" "water"
-            "$bottommaterial" "gm_post_ussr/map/Water0_BOTTOM"
+    "$bumpmap" "gm_post_ussr/map/Water0_D"
+    "$normalmap" "gm_post_ussr/map/Water0_D"
 
-            "$fogenable" "1"
-            "$fogcolor" "{37 32 21}"
-            "$fogstart" "0.00"
-            "$fogend" "300.00"
+    "%compilewater" 1
 
-            "$bumpframe" "0"
+    "$surfaceprop" "water"
+    "$bottommaterial" "gm_post_ussr/map/Water0_BOTTOM"
 
-            "$abovewater" 1 
+    "$fogenable" "1"
+    "$fogcolor" "{37 32 21}"
+    "$fogstart" "0.00"
+    "$fogend" "30.00"
 
-            "$cheapwaterstartdistance" "2000"
-            "$cheapwaterenddistance" "3000"
+    "$bumpframe" "0"
 
-            "Proxies"
-            {
-                "AnimatedTexture"
-                {
-                    "animatedtexturevar" "$normalmap"
-                    "animatedtextureframenumvar" "$bumpframe"
-                    "animatedtextureframerate" 20.00
-                }
+    "$abovewater" 1 
 
-                "TextureScroll"
-                {
-                    "texturescrollvar" "$bumptransform"
-                    "texturescrollrate" .1
-                    "texturescrollangle" 5.00
-                }
+    "$cheapwaterstartdistance" "2000"
+    "$cheapwaterenddistance" "3000"
 
-                "WaterLOD"
-                {
-                }
-            }
-        
+    "Proxies"
+    {
+        "AnimatedTexture"
+        {
+            "animatedtexturevar" "$normalmap"
+            "animatedtextureframenumvar" "$bumpframe"
+            "animatedtextureframerate" 20.00
         }
+
+        "TextureScroll"
+        {
+            "texturescrollvar" "$bumptransform"
+            "texturescrollrate" .1
+            "texturescrollangle" 5.00
+        }
+
+        "WaterLOD"
+        {
+        }
+    }
+
+}
     

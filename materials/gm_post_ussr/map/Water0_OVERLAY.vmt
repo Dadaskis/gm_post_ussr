@@ -1,0 +1,30 @@
+"Refract"
+{
+
+    "$refractamount" ".05"
+    "$bluramount" "2"
+    "$ignorez" "1"
+
+    "$scale" "[1 1]"
+
+    "$bumpmap" "gm_post_ussr/map/Water0_D"
+    "$normalmap" "gm_post_ussr/map/Water0_D"
+    
+    "$bumpframe" "0"
+    "Proxies"
+    {
+        "TextureScroll"
+        {
+            "texturescrollvar" "$bumptransform"
+            "texturescrollrate" .1
+            "texturescrollangle" 45.00
+        }
+
+        "AnimatedTexture"
+        {
+            "animatedtexturevar" "$normalmap"
+            "animatedtextureframenumvar" "$bumpframe"
+            "animatedtextureframerate" 30.00
+        }
+    }
+}

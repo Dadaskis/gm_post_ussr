@@ -1,0 +1,13 @@
+
+            "Sprite"
+            {
+                "%keywords" "gm_post_ussr_sprite"
+                "$spriteorientation" "vp_parallel"
+                "$spriteorigin" "[ 0.50 0.50 ]"
+                "$vertexcolor" "1"
+                "$vertexalpha" "1"
+        
+            "$basetexture" "gm_post_ussr/sprite/Light0_DA"
+        
+        }
+    

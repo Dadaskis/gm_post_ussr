@@ -1,40 +1,48 @@
 
-                "Water" { 
-                    "%keywords" "gm_post_ussr"
-                    "Water_DX81"
-                    {
-                        "$refractamount" ".25"
-                    }
+"Water" { 
+    "%keywords" "gm_post_ussr"
+    "Water_DX81"
+    {
+        "$refractamount" ".25"
+    }
 
-                    "%tooltexture" "gm_post_ussr/map/Water0_D"
+    "%tooltexture" "gm_post_ussr/map/Water0_D"
 
-                    "$refracttexture" "_rt_WaterRefraction"
-                    "$refractamount" "0.1"
+    "$refracttexture" "_rt_WaterRefraction"
+    "$refractamount" "0.1"
 
-                    "$scale" "[1 1]"
+    "$scale" "[1 1]"
 
-                    "$bumpmap" "gm_post_ussr/map/Water0_D"
-                    "$normalmap" "gm_post_ussr/map/Water0_D"
+    "$bumpmap" "gm_post_ussr/map/Water0_D"
+    "$normalmap" "gm_post_ussr/map/Water0_D"
 
-                    "%compilewater" 1
+    "%compilewater" 1
 
-                    "$surfaceprop" "water"
+    "$surfaceprop" "water"
 
-                    "$fogenable" 1
-                    "$fogcolor" "{37 32 21}"
-                    "$fogstart" 00.00
-                    "$fogend" 300.00
+    "$fogenable" 1
+    "$fogcolor" "{37 32 21}"
+    "$fogstart" -100.00
+    "$fogend" 350.00
 
-                    "$abovewater" 0
+    "$abovewater" 0
 
-                    "Proxies"
-                    {
-                        "AnimatedTexture"
-                        {
-                            "animatedtexturevar" "$normalmap"
-                            "animatedtextureframenumvar" "$bumpframe"
-                            "animatedtextureframerate" 20.00
-                        }
-                    }
-                }
-                
+    "$underwateroverlay" "gm_post_ussr/map/Water0_OVERLAY"
+
+    "Proxies"
+    {
+        "AnimatedTexture"
+        {
+            "animatedtexturevar" "$normalmap"
+            "animatedtextureframenumvar" "$bumpframe"
+            "animatedtextureframerate" 20.00
+        }
+
+        "TextureScroll"
+        {
+            "texturescrollvar" "$bumptransform"
+            "texturescrollrate" .1
+            "texturescrollangle" 5.00
+        }
+    }
+}
