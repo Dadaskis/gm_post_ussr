@@ -49,15 +49,7 @@ def get_materials_names():
 
 postfix_to_mark = {
     "D.tga" : "Diffuse",
-    "DA.tga" : "DiffuseAlpha",
-    "DAT.tga" : "DiffuseAlphaTranslucent",
-    "N.tga" : "Normal",
-    "G" : "Glossiness",
-    "E.tga" : "Emissive",
-    "REFRACT.tga" : "Refraction",
-    "REFRACTCOLOR" : "RefractionTintColor",
-    "REFRACTTINT.tga" : "RefractionTint",
-    "WATERNRM.tga" : "WaterNormal"
+    "DA.tga" : "DiffuseAdd"
 }
 
 mark_to_postfix = {}
@@ -110,21 +102,36 @@ def create_material_file(material_name):
 
     material_file_content = ""
 
-    material_file_content += """
-        "UnlitGeneric"
-        {
-            "%keywords" "gm_post_ussr_sprite"
-            "$spriteorientation" "vp_parallel"
-            "$spriteorigin" "[ 0.50 0.50 ]"
-            "$translucent" "1"
-            "$nocull" "1"
-            "$vertexcolor" "1"
-            "$vertexalpha" "1"
-    """
-
     if mark("Diffuse"):
         material_file_content += """
+            "UnlitGeneric"
+            {
+                "%keywords" "gm_post_ussr_sprite"
+                "$spriteorientation" "vp_parallel"
+                "$spriteorigin" "[ 0.50 0.50 ]"
+                "$translucent" "1"
+                "$nocull" "1"
+                "$vertexcolor" "1"
+                "$vertexalpha" "1"
+        """
+
+        material_file_content += """
             "$basetexture" \"""" + cd_materials + material_name + "_" + mark_to_postfix["Diffuse"] + """"
+        """
+
+    if mark("DiffuseAdd"):
+        material_file_content += """
+            "Sprite"
+            {
+                "%keywords" "gm_post_ussr_sprite"
+                "$spriteorientation" "vp_parallel"
+                "$spriteorigin" "[ 0.50 0.50 ]"
+                "$vertexcolor" "1"
+                "$vertexalpha" "1"
+        """
+
+        material_file_content += """
+            "$basetexture" \"""" + cd_materials + material_name + "_" + mark_to_postfix["DiffuseAdd"] + """"
         """
 
     material_file_content += """
