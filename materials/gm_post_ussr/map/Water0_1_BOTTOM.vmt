@@ -1,0 +1,48 @@
+
+"Water" { 
+    "%keywords" "gm_post_ussr"
+    "Water_DX81"
+    {
+        "$refractamount" ".25"
+    }
+
+    "%tooltexture" "gm_post_ussr/map/Water0_D"
+
+    "$refracttexture" "_rt_WaterRefraction"
+    "$refractamount" "0.1"
+
+    "$scale" "[1 1]"
+
+    "$bumpmap" "gm_post_ussr/map/Water0_D"
+    "$normalmap" "gm_post_ussr/map/Water0_D"
+
+    "%compilewater" 1
+
+    "$surfaceprop" "water"
+
+    "$fogenable" 1
+    "$fogcolor" "{68 63 50}"
+    "$fogstart" "0.00"
+    "$fogend" "70.00"
+
+    "$abovewater" 0
+
+    "$underwateroverlay" "gm_post_ussr/map/Water0_OVERLAY"
+
+    "Proxies"
+    {
+        "AnimatedTexture"
+        {
+            "animatedtexturevar" "$normalmap"
+            "animatedtextureframenumvar" "$bumpframe"
+            "animatedtextureframerate" 20.00
+        }
+
+        "TextureScroll"
+        {
+            "texturescrollvar" "$bumptransform"
+            "texturescrollrate" .1
+            "texturescrollangle" 5.00
+        }
+    }
+}
