@@ -41,6 +41,14 @@
     "$fogstart" "0.00"
     "$fogend" "30.00"
 
+    // Pool water
+    //"$fogcolor" "{15 79 57}"
+    //"$fogstart" "-1000.00"
+    //"$fogend" "1500.00"
+    //"$reflecttint" "{91 151 125}"
+    //"$refractamount" "0.04"
+    //"$reflectamount" "0.07"
+
     "$bumpframe" "0"
 
     "$abovewater" 1 
