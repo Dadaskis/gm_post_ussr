@@ -14,6 +14,7 @@ A comprehensive Garry's Mod map project featuring immersive post-Soviet environm
   - Callback systems for client-server communication
   - Auto-exposure changer for dynamic tonemapping
   - Delay tool for timed events
+
 *As a result those Lua systems were only used to make some briefcases and certain entities, I had bigger plans for that surely...*
 
 - **Custom Entities**:
