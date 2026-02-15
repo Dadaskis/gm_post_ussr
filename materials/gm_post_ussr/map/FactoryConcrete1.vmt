@@ -5,5 +5,7 @@
         
             "$basetexture" "gm_post_ussr/map/FactoryConcrete1_D"
         
+            "$SurfaceProp" "concrete"
+        
         }
     

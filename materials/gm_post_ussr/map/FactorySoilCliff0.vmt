@@ -5,5 +5,7 @@
         
             "$basetexture" "gm_post_ussr/map/FactorySoilCliff0_D"
         
+            "$SurfaceProp" "gravel"
+        
         }
     

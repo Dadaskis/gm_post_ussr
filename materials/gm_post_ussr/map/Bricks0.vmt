@@ -7,5 +7,7 @@
         
             "$bumpmap" "gm_post_ussr/map/Bricks0_N"
         
+            "$SurfaceProp" "brick"
+        
         }
     

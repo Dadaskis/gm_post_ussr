@@ -5,5 +5,7 @@
         
             "$basetexture" "gm_post_ussr/map/MetalTrim0_D"
         
+            "$SurfaceProp" "metal"
+        
         }
     

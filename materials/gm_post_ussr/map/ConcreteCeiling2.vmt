@@ -5,5 +5,9 @@
         
             "$basetexture" "gm_post_ussr/map/ConcreteCeiling2_D"
         
+            "$bumpmap" "gm_post_ussr/map/ConcreteCeiling2_N"
+        
+            "$SurfaceProp" "concrete"
+        
         }
     

@@ -5,5 +5,7 @@
         
             "$basetexture" "gm_post_ussr/map/OldApartmentTop0_NoWindows_D"
         
+            "$SurfaceProp" "concrete"
+        
         }
     

@@ -1,0 +1,13 @@
+
+            "LightmappedGeneric"
+            {
+                "%keywords" "gm_post_ussr"
+        
+            "$basetexture" "gm_post_ussr/map/ConcreteWall8_D"
+        
+            "$bumpmap" "gm_post_ussr/map/ConcreteWall8_N"
+        
+            "$SurfaceProp" "concrete"
+        
+        }
+    

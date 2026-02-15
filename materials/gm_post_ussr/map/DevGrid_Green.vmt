@@ -5,5 +5,7 @@
         
             "$basetexture" "gm_post_ussr/map/DevGrid_Green_D"
         
+            "$SurfaceProp" "tile"
+        
         }
     

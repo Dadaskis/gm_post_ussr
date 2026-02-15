@@ -5,5 +5,9 @@
         
             "$basetexture" "gm_post_ussr/map/FactoryGrass0_D"
         
+            "$bumpmap" "gm_post_ussr/map/FactoryGrass0_N"
+        
+            "$SurfaceProp" "grass"
+        
         }
     

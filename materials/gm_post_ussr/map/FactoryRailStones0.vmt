@@ -7,5 +7,7 @@
         
             "$bumpmap" "gm_post_ussr/map/FactoryRailStones0_N"
         
+            "$SurfaceProp" "gravel"
+        
         }
     

@@ -16,8 +16,6 @@
 
 # gm_post_ussr
 
-*This repository is outdated and doesn't contain all the files present in the final addon.*
-
 A comprehensive Garry's Mod map project featuring immersive post-Soviet environments with custom assets, entities, and certain gameplay systems.
 
 ## Features

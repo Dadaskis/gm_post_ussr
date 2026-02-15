@@ -8,5 +8,7 @@
             "$selfillum" "1"
             "$selfillummask" "gm_post_ussr/map/Window0_E"
         
+            "$SurfaceProp" "glass"
+        
         }
     
